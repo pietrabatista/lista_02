@@ -398,3 +398,24 @@ matrizSoma <- SomaDeMatrizes(matrizA, matrizB)
 Escrever("Soma das matrizes:")
 ImprimirMatriz(matrizSoma)
 ```
+```
+matrizA = [[1,2,3],[4,5,6],[7,8,9]]
+matrizB = [[9,8,7],[6,5,4], [3,2,1]]
+
+Função MultiplicaçãoDeMatrizes (matrizA, matrizB):
+
+	IF colunas(matrizA) ≠ linhas(matrizB) então:
+		imprimir ('As matrizes não podem ser multiplicadas pois são incompatíveis');
+
+	ELSE:
+		matrizResultado <- novaMatriz(linhasA, colunasB);
+
+	FOR i = 0, enquanto i < linhasA: faça i++;
+	FOR j = 0, enquanto j < colunasB: faça i++;
+	FOR k = 0, enquanto k < colunasA: faça i++;
+
+	matrizResultado[i][j] += matrizA[i][j] * matrizB[k][j];
+
+	imprima (matrizResultado);
+
+```
